@@ -3,6 +3,7 @@
         :class="classes"
         v-click-outside.capture="onClickOutside"
         v-click-outside:mousedown.capture="onClickOutside"
+        v-click-outside:touchstart.capture="onClickOutside"
     >
         <div
             ref="reference"
@@ -33,18 +34,23 @@
                     :multiple="multiple"
                     :values="values"
                     :clearable="canBeCleared"
+                    :prefix="prefix"
                     :disabled="disabled"
                     :remote="remote"
                     :input-element-id="elementId"
                     :initial-label="initialLabel"
                     :placeholder="placeholder"
                     :query-prop="query"
+                    :max-tag-count="maxTagCount"
+                    :max-tag-placeholder="maxTagPlaceholder"
 
                     @on-query-change="onQueryChange"
                     @on-input-focus="isFocused = true"
                     @on-input-blur="isFocused = false"
                     @on-clear="clearSingleSelect"
-                />
+                >
+                    <slot name="prefix" slot="prefix"></slot>
+                </select-head>
             </slot>
         </div>
         <transition name="transition-drop">
@@ -231,6 +237,21 @@
             },
             elementId: {
                 type: String
+            },
+            transferClassName: {
+                type: String
+            },
+            // 3.4.0
+            prefix: {
+                type: String
+            },
+            // 3.4.0
+            maxTagCount: {
+                type: Number
+            },
+            // 3.4.0
+            maxTagPlaceholder: {
+                type: Function
             }
         },
         mounted(){
@@ -286,6 +307,7 @@
                     [prefixCls + '-dropdown-transfer']: this.transfer,
                     [prefixCls + '-multiple']: this.multiple && this.transfer,
                     ['ivu-auto-complete']: this.autoComplete,
+                    [this.transferClassName]: this.transferClassName
                 };
             },
             selectionCls () {
@@ -415,6 +437,8 @@
                 if (query === null) {
                     this.onQueryChange('');
                     this.values = [];
+                    // #5620,修复清空搜索关键词后，重新搜索相同的关键词没有触发远程搜索
+                    this.lastRemoteQuery = '';
                 }
             },
             clearSingleSelect(){ // PUBLIC API

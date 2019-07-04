@@ -30,46 +30,33 @@ iView
             </a>
           </td>
           <td align="center" valign="middle">
-            <a href="https://juejin.im/welcome/frontend?utm_source=iview&utm_medium=banner&utm_content=huoyue&utm_campaign=q4_website" target="_blank">
-              <img width="300" src="https://file.iviewui.com/asd/asd-juejin3.png">
+            <a href="https://e.coding.net/?utm_source=iview" target="_blank">
+              <img width="300" src="https://file.iviewui.com/asd/asd-coding5.png">
             </a>
           </td>
-          <td align="center" valign="middle">
-            <a href="https://studio.qcloud.coding.net/campaign/favorite-plugins/index?utm_source=iview" target="_blank">
-              <img width="300" src="https://file.iviewui.com/asd/asd-coding3.png">
+            <td align="center" valign="middle">
+            <a href="https://cn.udacity.com/course/wechat-mini-program-nanodegree--nd666-cn?utm_source=iviewui&utm_medium=banner&utm_campaign=wmpnd" target="_blank">
+              <img width="300" src="https://file.iviewui.com/asd/asd-u-13.png">
             </a>
           </td>
         </tr>
         <tr>
-          <td align="center" valign="middle">
-            <a href="https://cn.udacity.com/fend/?utm_source=iviewui&utm_medium=banner&utm_campaign=fend" target="_blank">
-              <img width="300" src="https://file.iviewui.com/asd/asd-u-new-2.png">
+            </td>
+            <td align="center" valign="middle">
+            <a href="https://m3w.cn/track/uniapp/iview" target="_blank">
+              <img width="300" src="https://file.iviewui.com/asd/asd-uniapp3.png">
             </a>
           </td>
-<!--           <td align="center" valign="middle">
-            <a href="https://www.vaptcha.com/?from=iview" target="_blank">
-              <img width="300" src="https://file.iviewui.com/asd/asd-vaptcha2.jpg">
-            </a>
-          </td> -->
-<!--           <td align="center" valign="middle">
-            <a href="https://www.accesshub.cn/" target="_blank">
-              <img width="300" src="https://file.iviewui.com/asd/asd-accesshub.jpg">
-            </a>
-          </td> -->
           <td align="center" valign="middle">
-            <a href="https://juejin.im/book/5bc844166fb9a05cd676ebca" target="_blank">
-              <img width="300" src="https://file.iviewui.com/asd/asd-v-book2.png">
+            <a href="https://s.growingio.com/p0732m" target="_blank">
+              <img width="300" src="https://file.iviewui.com/asd/asd-kkb-1.png">
             </a>
           </td>
         </tr>
       </tbody>
 </table>
 
-> If you'd like be a sponsor, to show your ads in GitHub and iView doc, please email admin@aresn.com to get more infomation.
-> 
-> (如果您想成为赞助商，在 GitHub 和 iView 文档展示您的广告，请邮件咨询 admin@aresn.com)
->
-> (如果您有任何关于 iView 或 Vue.js 相关的问题，欢迎到 iView 社区提问 https://dev.iviewui.com/issues )
+> If you'd like be a sponsor, to show your ads in GitHub and iView doc, please email admin@aresn.com to get more information.
 
 ## Docs
 
@@ -176,13 +163,12 @@ If you want to contribute or have questions or bugs to report:
 - [iView Developer](https://dev.iviewui.com)
 - [iView Run](https://run.iviewui.com)
 - [iView-Admin](https://github.com/iview/iview-admin)
-- [iView-Doc](https://github.com/iview/iview-doc)
 - [iView-Loader](https://github.com/iview/iview-loader)
+- [iView-Plugin](https://github.com/iview/vue-cli-plugin-iview)
 - [iView-Area](https://github.com/iview/iview-area)
 - [iView-Editor](https://github.com/iview/iview-editor)
-- [iView-Cli](https://github.com/iview/iview-cli)
 
-## Sponers
+## Sponsors
 ![](https://opencollective.com/iview/tiers/sponsor.svg?avatarHeight=36)
 
 ## Backers
